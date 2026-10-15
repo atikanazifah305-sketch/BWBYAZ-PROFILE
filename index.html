@@ -76,7 +76,7 @@
     "currenciesAccepted": "IDR",
     "paymentAccepted": "Bank Transfer, QRIS, COD",
     "openingHours": "Mo-Sa 09:00-18:00",
-    "telephone": "+6281234567890",
+    "telephone": "+6283159406484",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Jakarta Selatan",
@@ -137,7 +137,7 @@
 
       <!-- Zone 3: Primary CTA WhatsApp & Mobile Toggle -->
       <div class="flex items-center gap-3 shrink-0">
-        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana%20terbaru." 
+        <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana%20terbaru." 
            target="_blank" 
            rel="noopener noreferrer" 
            class="hidden sm:inline-flex items-center gap-2.5 px-5 py-2.5 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-sm hover:shadow">
@@ -163,7 +163,7 @@
         <a href="#kontak" class="mobile-nav-link py-2 border-b border-brand-border/40 hover:text-brand-bronze transition-colors">Kontak & Butik</a>
       </nav>
       <div class="pt-2">
-        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana%20terbaru."
+        <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana%20terbaru."
            target="_blank" 
            rel="noopener noreferrer"
            class="w-full flex items-center justify-center gap-2 px-5 py-3 bg-brand-charcoal text-white text-xs font-semibold tracking-wider uppercase hover:bg-brand-bronze transition-colors">
@@ -204,7 +204,7 @@
                 <i class="fa-solid fa-arrow-right text-xs"></i>
               </a>
 
-              <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20memesan%20koleksi%20terbaru%20BWBYAZ.%20Boleh%20minta%20katalog%20lengkapnya?" 
+              <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20memesan%20koleksi%20terbaru%20BWBYAZ.%20Boleh%20minta%20katalog%20lengkapnya?" 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand-ivory hover:bg-brand-sand/40 text-brand-charcoal border border-brand-charcoal/30 hover:border-brand-bronze text-xs font-semibold tracking-widest uppercase transition-all duration-300">
@@ -237,15 +237,23 @@
               <!-- Background accent geometry -->
               <div class="absolute -inset-3 bg-brand-beige rounded-none border border-brand-sand/60 -z-10 transform rotate-1"></div>
               
-              <div class="relative aspect-[3/4] w-full overflow-hidden bg-brand-cream border border-brand-border shadow-xl">
-                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" 
-                     alt="Model mengenakan busana elegan BWBYAZ" 
+              <div class="relative aspect-[3/4] w-full overflow-hidden bg-brand-cream border border-brand-border shadow-xl group">
+                <!-- Quick Image Upload button for user's photo -->
+                <label for="heroImageUploader" title="Ganti atau upload foto hero sendiri" class="absolute top-3 right-3 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-brand-charcoal/80 hover:bg-brand-charcoal text-white text-[10px] font-semibold tracking-wider uppercase backdrop-blur-md border border-white/20 shadow-md cursor-pointer transition-all duration-200">
+                  <i class="fa-solid fa-camera text-brand-goldLight text-xs"></i>
+                  <span>Ganti Foto</span>
+                </label>
+                <input type="file" id="heroImageUploader" accept="image/*" class="hidden" onchange="handleHeroImageUpload(event)" />
+
+                <img id="heroMainImage"
+                     src="hero-banner.jpg" 
+                     alt="Koleksi busana signature BWBYAZ di gantungan butik: cardigan floral, red puff top, dan koleksi netral" 
                      class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                      referrerpolicy="no-referrer"
-                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85';" />
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1000&q=85';" />
                 
                 <!-- Bottom Scrim Overlay -->
-                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/75 via-black/30 to-transparent text-white">
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/75 via-black/30 to-transparent text-white pointer-events-none">
                   <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-goldLight">Autumn / Harmoni 2026</span>
                   <p class="font-serif text-lg sm:text-xl font-medium mt-1">The Essence of Graceful Silhouette</p>
                 </div>
@@ -281,8 +289,8 @@
                      onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85';" />
               </div>
               <div class="absolute -bottom-6 -right-6 w-1/2 aspect-square bg-brand-beige overflow-hidden border border-brand-sand shadow-lg hidden sm:block">
-                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80" 
-                     alt="Detail serat kain dan drape BWBYAZ" 
+                <img src="/src/assets/images/regenerated_image_1792038484082.jpg" 
+                     alt="Detail serat kain dan drape busana BWBYAZ" 
                      class="w-full h-full object-cover"
                      referrerpolicy="no-referrer" />
               </div>
@@ -362,7 +370,7 @@
           <!-- Product Card 1 -->
           <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
-              <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=85" 
+              <img src="/src/assets/images/regenerated_image_1792038256235.jpg" 
                    alt="Aurelia Silk Wrap Dress BWBYAZ" 
                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                    referrerpolicy="no-referrer" />
@@ -373,7 +381,7 @@
               </div>
 
               <!-- Quick View Trigger -->
-              <button onclick="openProductModal('Aurelia Silk Wrap Dress', 'Rp 689.000', 'Signature Dress', 'Material Mulberry Silk Blend premium dengan efek kilau elegan bersahaja. Dilengkapi pita pinggang fleksibel dan aksen drapery anggun yang membuat siluet terlihat ramping.', 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=85', 'Warm Champagne')" 
+              <button onclick="openProductModal('Aurelia Silk Wrap Dress', 'Rp 689.000', 'Signature Dress', 'Material Mulberry Silk Blend premium dengan efek kilau elegan bersahaja. Dilengkapi pita pinggang fleksibel dan aksen drapery anggun yang membuat siluet terlihat ramping.', '/src/assets/images/regenerated_image_1792038256235.jpg', 'Warm Champagne')" 
                       class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
                 <i class="fa-regular fa-eye"></i>
                 <span>Quick View</span>
@@ -399,7 +407,7 @@
                   <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
                   <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 689.000</span>
                 </div>
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Aurelia%20Silk%20Wrap%20Dress%20(Rp%20689.000).%20Apakah%20size%20masih%20tersedia?" 
+                <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Aurelia%20Silk%20Wrap%20Dress%20(Rp%20689.000).%20Apakah%20size%20masih%20tersedia?" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
@@ -413,7 +421,7 @@
           <!-- Product Card 2 -->
           <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
-              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" 
+              <img src="/src/assets/images/regenerated_image_1792038257400.jpg" 
                    alt="Celeste Pleated Peplum Blouse BWBYAZ" 
                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                    referrerpolicy="no-referrer" />
@@ -422,7 +430,7 @@
                 Daily Chic
               </div>
 
-              <button onclick="openProductModal('Celeste Pleated Peplum Blouse', 'Rp 349.000', 'Daily Chic Blouse', 'Blouse elegan berdetail pleated lipit mikro rapi di bagian dada dengan siluet peplum modern. Menggunakan katun poplin premium yang adem untuk kantor maupun santai.', 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85', 'Alabaster Ivory')" 
+              <button onclick="openProductModal('Celeste Pleated Peplum Blouse', 'Rp 349.000', 'Daily Chic Blouse', 'Blouse elegan berdetail pleated lipit mikro rapi di bagian dada dengan siluet peplum modern. Menggunakan katun poplin premium yang adem untuk kantor maupun santai.', '/src/assets/images/regenerated_image_1792038257400.jpg', 'Alabaster Ivory')" 
                       class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
                 <i class="fa-regular fa-eye"></i>
                 <span>Quick View</span>
@@ -448,7 +456,7 @@
                   <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
                   <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 349.000</span>
                 </div>
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Celeste%20Pleated%20Blouse%20(Rp%20349.000).%20Apakah%20size%20masih%20tersedia?" 
+                <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Celeste%20Pleated%20Blouse%20(Rp%20349.000).%20Apakah%20size%20masih%20tersedia?" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
@@ -462,7 +470,7 @@
           <!-- Product Card 3 -->
           <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
-              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85" 
+              <img src="/src/assets/images/regenerated_image_1792038253549.jpg" 
                    alt="Valerie Textured Trench Outer BWBYAZ" 
                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                    referrerpolicy="no-referrer" />
@@ -471,7 +479,7 @@
                 Outerwear
               </div>
 
-              <button onclick="openProductModal('Valerie Textured Trench Outer', 'Rp 499.000', 'Elegant Outerwear', 'Outer berpotongan longgar dengan aksen belt gesper bronze. Dibuat dari linen blend bertekstur tenun mewah yang memberikan aura profesional sekaligus santai.', 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85', 'Sand Beige')" 
+              <button onclick="openProductModal('Valerie Textured Trench Outer', 'Rp 499.000', 'Elegant Outerwear', 'Outer berpotongan longgar dengan aksen belt gesper bronze. Dibuat dari linen blend bertekstur tenun mewah yang memberikan aura profesional sekaligus santai.', '/src/assets/images/regenerated_image_1792038253549.jpg', 'Sand Beige')" 
                       class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
                 <i class="fa-regular fa-eye"></i>
                 <span>Quick View</span>
@@ -497,7 +505,7 @@
                   <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
                   <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 499.000</span>
                 </div>
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Valerie%20Trench%20Outer%20(Rp%20499.000).%20Apakah%20masih%20tersedia?" 
+                <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Valerie%20Trench%20Outer%20(Rp%20499.000).%20Apakah%20masih%20tersedia?" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
@@ -511,7 +519,7 @@
           <!-- Product Card 4 -->
           <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
-              <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=85" 
+              <img src="/src/assets/images/regenerated_image_1792038254643.jpg" 
                    alt="Seraphina Two-Piece Satin Linen Set BWBYAZ" 
                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                    referrerpolicy="no-referrer" />
@@ -520,7 +528,7 @@
                 Exclusive Sets
               </div>
 
-              <button onclick="openProductModal('Seraphina Two-Piece Set', 'Rp 789.000', 'Exclusive Sets', 'Setelan two-piece eksklusif terdiri dari atasan tunik asimetris dan celana palazzo berpotongan jenjang. Dibuat dari perpaduan satin armani dan linen premium anti kusut.', 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=85', 'Warm Mocha')" 
+              <button onclick="openProductModal('Seraphina Two-Piece Set', 'Rp 789.000', 'Exclusive Sets', 'Setelan two-piece eksklusif terdiri dari atasan tunik asimetris dan celana palazzo berpotongan jenjang. Dibuat dari perpaduan satin armani dan linen premium anti kusut.', '/src/assets/images/regenerated_image_1792038254643.jpg', 'Warm Mocha')" 
                       class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
                 <i class="fa-regular fa-eye"></i>
                 <span>Quick View</span>
@@ -546,7 +554,7 @@
                   <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
                   <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 789.000</span>
                 </div>
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Seraphina%20Two-Piece%20Set%20(Rp%20789.000).%20Apakah%20size%20masih%20tersedia?" 
+                <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Seraphina%20Two-Piece%20Set%20(Rp%20789.000).%20Apakah%20size%20masih%20tersedia?" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
@@ -562,7 +570,7 @@
         <!-- Catalog Note -->
         <div class="mt-12 text-center">
           <p class="text-xs text-brand-muted mb-4">Ingin melihat varian warna lain atau custom lingkar dada?</p>
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20ukuran%20dan%20katalog%20lengkap%20beserta%20pilihan%20warnanya."
+          <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20ukuran%20dan%20katalog%20lengkap%20beserta%20pilihan%20warnanya."
              target="_blank"
              rel="noopener noreferrer"
              class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-brand-bronze hover:text-brand-charcoal underline underline-offset-8 transition-colors">
@@ -748,7 +756,7 @@
           Hubungi admin butik kami melalui WhatsApp untuk panduan ukuran detail, info ketersediaan stok warna, dan pemesanan instan tanpa repot.
         </p>
         <div class="pt-4">
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20ukuran%20dan%20memesan%20busana%20BWBYAZ."
+          <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20ukuran%20dan%20memesan%20busana%20BWBYAZ."
              target="_blank"
              rel="noopener noreferrer"
              class="inline-flex items-center gap-3 px-8 py-4 bg-brand-bronze hover:bg-brand-gold text-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-lg">
@@ -782,7 +790,7 @@
             <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok BWBYAZ" class="w-9 h-9 flex items-center justify-center border border-brand-border text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors">
               <i class="fa-brands fa-tiktok text-sm"></i>
             </a>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp BWBYAZ" class="w-9 h-9 flex items-center justify-center border border-brand-border text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors">
+            <a href="https://wa.me/6283159406484" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp BWBYAZ" class="w-9 h-9 flex items-center justify-center border border-brand-border text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors">
               <i class="fa-brands fa-whatsapp text-sm"></i>
             </a>
           </div>
@@ -821,7 +829,7 @@
             </p>
             <p class="flex items-center gap-2">
               <i class="fa-brands fa-whatsapp text-brand-bronze"></i>
-              <a href="https://wa.me/6281234567890" class="hover:text-brand-bronze transition-colors font-mono">+62 812-3456-7890</a>
+              <a href="https://wa.me/6283159406484" class="hover:text-brand-bronze transition-colors font-mono">+62 831-5940-6484</a>
             </p>
             <p class="flex items-center gap-2">
               <i class="fa-solid fa-envelope text-brand-bronze"></i>
@@ -844,7 +852,7 @@
   <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
   <div class="fixed bottom-6 right-6 z-50 flex items-center group">
     <!-- Tooltip label -->
-    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana." 
+    <a href="https://wa.me/6283159406484?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana." 
        target="_blank" 
        rel="noopener noreferrer" 
        aria-label="Chat WhatsApp Admin BWBYAZ" 
@@ -981,7 +989,7 @@
       const textMessage = encodeURIComponent(
         `Halo Admin BWBYAZ, saya ingin memesan:\n• Produk: ${currentSelectedProduct.name}\n• Ukuran: ${currentSelectedProduct.selectedSize}\n• Harga: ${currentSelectedProduct.price}\n\nApakah masih tersedia dan bagaimana prosedur pembayarannya? Terima kasih!`
       );
-      modalOrderBtn.href = `https://wa.me/6281234567890?text=${textMessage}`;
+      modalOrderBtn.href = `https://wa.me/6283159406484?text=${textMessage}`;
     }
 
     function openProductModal(name, price, category, desc, imgUrl, color) {
@@ -1014,6 +1022,42 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeProductModal();
+      }
+    });
+
+    // Custom Hero Image Uploader & Local Persistence
+    function handleHeroImageUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const dataUrl = e.target.result;
+        const heroImg = document.getElementById('heroMainImage');
+        if (heroImg) {
+          heroImg.src = dataUrl;
+        }
+        try {
+          localStorage.setItem('bwbyaz_hero_image', dataUrl);
+        } catch (err) {
+          console.warn('Ukuran gambar melebihi batas simpan lokal:', err);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Auto-restore custom hero image if previously saved in browser
+    window.addEventListener('DOMContentLoaded', () => {
+      try {
+        const savedHero = localStorage.getItem('bwbyaz_hero_image');
+        if (savedHero) {
+          const heroImg = document.getElementById('heroMainImage');
+          if (heroImg) {
+            heroImg.src = savedHero;
+          }
+        }
+      } catch (err) {
+        console.warn('Gagal memuat foto hero tersimpan:', err);
       }
     });
   </script>
