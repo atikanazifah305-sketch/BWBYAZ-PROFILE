@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>BWBYAZ – Luxury Fashion & Signature Wear</title>
+  <meta name="title" content="BWBYAZ – Luxury Fashion & Signature Wear" />
+  <meta name="description" content="Landing page profil brand fashion eksklusif BWBYAZ menghadirkan busana elegan, modern, dan material premium grade A dengan jahitan standar butik." />
+  <meta name="keywords" content="BWBYAZ, fashion wanita, busana muslimah elegan, signature dress, daily blouse, outerwear premium, butik eksklusif" />
+  <meta name="author" content="BWBYAZ" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BWBYAZ – Luxury Fashion & Signature Wear" />
+  <meta property="og:description" content="Koleksi busana wanita eksklusif dengan material premium grade A, jahitan standar butik, dan siluet elegan modern." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:site_name" content="BWBYAZ" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BWBYAZ – Luxury Fashion & Signature Wear" />
+  <meta name="twitter:description" content="Koleksi busana wanita eksklusif dengan material premium grade A, jahitan standar butik, dan siluet elegan modern." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              ivory: '#FBF9F5',
+              cream: '#F5EFEB',
+              beige: '#ECE4D8',
+              sand: '#DFD4C4',
+              bronze: '#8C6C47',
+              bronzeDark: '#664C2E',
+              bronzeLight: '#AA8860',
+              gold: '#C2A379',
+              goldLight: '#E8DCC8',
+              charcoal: '#1F1C1A',
+              charcoalLight: '#38332E',
+              muted: '#766F67',
+              border: '#E8E0D4'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "BWBYAZ",
+    "description": "Brand busana muslimah dan fashion wanita modern eksklusif dengan material premium grade A dan jahitan berstandar butik.",
+    "priceRange": "Rp 250.000 - Rp 950.000",
+    "currenciesAccepted": "IDR",
+    "paymentAccepted": "Bank Transfer, QRIS, COD",
+    "openingHours": "Mo-Sa 09:00-18:00",
+    "telephone": "+6281234567890",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jakarta Selatan",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+
+  <style>
+    /* Custom refined scrollbar & smooth typography */
+    body {
+      background-color: #FBF9F5;
+      color: #1F1C1A;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    ::selection {
+      background-color: #DFD4C4;
+      color: #1F1C1A;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-brand-ivory text-brand-charcoal selection:bg-brand-sand selection:text-brand-charcoal">
+
+  <!-- ================= TOP NOTIFICATION ANNOUNCEMENT ================= -->
+  <div class="bg-brand-charcoal text-brand-goldLight text-xs py-2 px-4 text-center tracking-widest uppercase font-medium border-b border-brand-charcoalLight flex items-center justify-center gap-2">
+    <span>Edisi Koleksi Harmoni Signature 2026 Kini Tersedia</span>
+    <span class="hidden md:inline text-brand-gold">·</span>
+    <span class="hidden md:inline text-brand-cream/80">Pengiriman ke Seluruh Indonesia & Konsultasi Ukuran Gratis</span>
+  </div>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <header class="sticky top-0 z-40 bg-brand-ivory/95 backdrop-blur-md border-b border-brand-border/60 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
+      
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#" class="group flex flex-col items-start focus:outline-none">
+        <span class="font-serif text-2xl sm:text-3xl font-bold tracking-[0.28em] text-brand-charcoal transition-colors group-hover:text-brand-bronze">
+          BWBYAZ
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.35em] text-brand-muted -mt-1 font-medium">
+          Atelier Signature
+        </span>
+      </a>
+
+      <!-- Zone 2: Navigation Links (Desktop) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-brand-charcoalLight">
+        <a href="#about" class="hover:text-brand-bronze transition-colors whitespace-nowrap">Tentang Kami</a>
+        <a href="#koleksi" class="hover:text-brand-bronze transition-colors whitespace-nowrap">Koleksi Signature</a>
+        <a href="#keunggulan" class="hover:text-brand-bronze transition-colors whitespace-nowrap">Keunggulan</a>
+        <a href="#testimoni" class="hover:text-brand-bronze transition-colors whitespace-nowrap">Testimoni</a>
+        <a href="#kontak" class="hover:text-brand-bronze transition-colors whitespace-nowrap">Kontak</a>
+      </nav>
+
+      <!-- Zone 3: Primary CTA WhatsApp & Mobile Toggle -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana%20terbaru." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="hidden sm:inline-flex items-center gap-2.5 px-5 py-2.5 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-sm hover:shadow">
+          <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i>
+          <span>Order via WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" aria-label="Buka Menu Navigasi" class="md:hidden p-2.5 text-brand-charcoal hover:text-brand-bronze focus:outline-none">
+          <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-brand-cream border-b border-brand-border px-6 py-6 space-y-4">
+      <nav class="flex flex-col space-y-3 text-sm font-medium text-brand-charcoal">
+        <a href="#about" class="mobile-nav-link py-2 border-b border-brand-border/40 hover:text-brand-bronze transition-colors">Tentang Kami</a>
+        <a href="#koleksi" class="mobile-nav-link py-2 border-b border-brand-border/40 hover:text-brand-bronze transition-colors">Koleksi Signature</a>
+        <a href="#keunggulan" class="mobile-nav-link py-2 border-b border-brand-border/40 hover:text-brand-bronze transition-colors">Keunggulan Kami</a>
+        <a href="#testimoni" class="mobile-nav-link py-2 border-b border-brand-border/40 hover:text-brand-bronze transition-colors">Testimoni Pelanggan</a>
+        <a href="#kontak" class="mobile-nav-link py-2 border-b border-brand-border/40 hover:text-brand-bronze transition-colors">Kontak & Butik</a>
+      </nav>
+      <div class="pt-2">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana%20terbaru."
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full flex items-center justify-center gap-2 px-5 py-3 bg-brand-charcoal text-white text-xs font-semibold tracking-wider uppercase hover:bg-brand-bronze transition-colors">
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+          <span>Chat WhatsApp Admin</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative bg-gradient-to-b from-brand-ivory via-brand-cream to-brand-ivory border-b border-brand-border/60 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Copy & CTAs -->
+          <div class="lg:col-span-7 space-y-6 lg:pr-8">
+            
+            <div class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-brand-bronze">
+              <span class="w-8 h-[1px] bg-brand-bronze"></span>
+              <span>Signature Fashion Atelier</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-brand-charcoal leading-[1.12] text-balance">
+              Elegansi Abadi dalam Setiap Siluet Signature.
+            </h1>
+
+            <p class="text-base sm:text-lg text-brand-muted leading-relaxed max-w-2xl font-light">
+              Didesain khusus untuk wanita yang mendambakan keanggunan bersahaja. Menyatukan material kain grade A pilihan dengan pola potong presisi dan jahitan standar butik bernilai tinggi.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <a href="#koleksi" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-md hover:shadow-lg">
+                <span>Lihat Koleksi Terbaru</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+
+              <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20memesan%20koleksi%20terbaru%20BWBYAZ.%20Boleh%20minta%20katalog%20lengkapnya?" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand-ivory hover:bg-brand-sand/40 text-brand-charcoal border border-brand-charcoal/30 hover:border-brand-bronze text-xs font-semibold tracking-widest uppercase transition-all duration-300">
+                <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+                <span>Order via WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Trust Markers -->
+            <div class="pt-6 border-t border-brand-sand/60 grid grid-cols-3 gap-4">
+              <div>
+                <p class="font-serif text-xl sm:text-2xl font-semibold text-brand-charcoal">100%</p>
+                <p class="text-xs text-brand-muted mt-0.5">Bahan Premium Grade A</p>
+              </div>
+              <div>
+                <p class="font-serif text-xl sm:text-2xl font-semibold text-brand-charcoal">Boutique</p>
+                <p class="text-xs text-brand-muted mt-0.5">Standar Kelim Halus</p>
+              </div>
+              <div>
+                <p class="font-serif text-xl sm:text-2xl font-semibold text-brand-charcoal">Limited</p>
+                <p class="text-xs text-brand-muted mt-0.5">Batch Eksklusif</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Editorial Hero Imagery -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <!-- Background accent geometry -->
+              <div class="absolute -inset-3 bg-brand-beige rounded-none border border-brand-sand/60 -z-10 transform rotate-1"></div>
+              
+              <div class="relative aspect-[3/4] w-full overflow-hidden bg-brand-cream border border-brand-border shadow-xl">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" 
+                     alt="Model mengenakan busana elegan BWBYAZ" 
+                     class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                     referrerpolicy="no-referrer"
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85';" />
+                
+                <!-- Bottom Scrim Overlay -->
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/75 via-black/30 to-transparent text-white">
+                  <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-goldLight">Autumn / Harmoni 2026</span>
+                  <p class="font-serif text-lg sm:text-xl font-medium mt-1">The Essence of Graceful Silhouette</p>
+                </div>
+              </div>
+
+              <!-- Floating badge -->
+              <div class="absolute -bottom-5 -left-5 bg-brand-ivory border border-brand-border p-4 shadow-lg hidden sm:block max-w-[200px]">
+                <p class="text-[11px] uppercase tracking-wider text-brand-bronze font-bold">Signature Craft</p>
+                <p class="text-xs text-brand-charcoalLight mt-1 font-normal">Dirancang dengan teliti untuk kenyamanan seharian.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="py-20 lg:py-28 bg-brand-ivory border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image Atelier Collage -->
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative">
+              <div class="aspect-[4/5] bg-brand-cream overflow-hidden border border-brand-border shadow-md">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=85" 
+                     alt="Proses pembuatan dan material premium busana BWBYAZ" 
+                     class="w-full h-full object-cover"
+                     referrerpolicy="no-referrer"
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85';" />
+              </div>
+              <div class="absolute -bottom-6 -right-6 w-1/2 aspect-square bg-brand-beige overflow-hidden border border-brand-sand shadow-lg hidden sm:block">
+                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80" 
+                     alt="Detail serat kain dan drape BWBYAZ" 
+                     class="w-full h-full object-cover"
+                     referrerpolicy="no-referrer" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Narrative -->
+          <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+            <div class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-brand-bronze">
+              <span class="w-8 h-[1px] bg-brand-bronze"></span>
+              <span>Filosofi & Profil Brand</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-brand-charcoal leading-tight">
+              Kisah di Balik <span class="italic font-normal">BWBYAZ</span>: Memuliakan Penampilan Wanita dengan Sentuhan Autentik.
+            </h2>
+
+            <p class="text-brand-muted text-base sm:text-lg leading-relaxed font-light">
+              <strong class="font-medium text-brand-charcoal">BWBYAZ</strong> lahir dari visi sederhana namun mendalam: memberikan wanita ruang untuk tampil anggun, percaya diri, dan berkelas tanpa harus mengorbankan kenyamanan fisik.
+            </p>
+
+            <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
+              Kami percaya bahwa sebuah pakaian bukan sekadar penutup tubuh, melainkan refleksi jati diri dan ketenangan hati. Setiap rancangan melewati tahapan kurasi material yang ketat — dari kain sutra jatuh, katun organik bertekstur, hingga linen premium berpori sejuk yang ramah pada iklim Indonesia.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              <div class="p-5 bg-brand-cream border border-brand-border">
+                <div class="w-8 h-8 flex items-center justify-center text-brand-bronze text-lg mb-3">
+                  <i class="fa-solid fa-gem"></i>
+                </div>
+                <h3 class="font-serif text-lg font-semibold text-brand-charcoal">Eksklusivitas Koleksi</h3>
+                <p class="text-xs text-brand-muted mt-1 leading-relaxed">
+                  Setiap desain diproduksi dalam kuantitas terbatas (limited batch) guna menjaga keunikan pemakainya.
+                </p>
+              </div>
+
+              <div class="p-5 bg-brand-cream border border-brand-border">
+                <div class="w-8 h-8 flex items-center justify-center text-brand-bronze text-lg mb-3">
+                  <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3 class="font-serif text-lg font-semibold text-brand-charcoal">Jahitan Presisi Butik</h3>
+                <p class="text-xs text-brand-muted mt-1 leading-relaxed">
+                  Finishing kelim bersih, obras tertata rapat, dan potongan siluet yang proporsional di setiap ukuran tubuh.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SIGNATURE COLLECTION (KATALOG MINI) ================= -->
+    <section id="koleksi" class="py-20 lg:py-28 bg-brand-cream border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-brand-bronze">
+            <span class="w-6 h-[1px] bg-brand-bronze"></span>
+            <span>Signature Collection</span>
+            <span class="w-6 h-[1px] bg-brand-bronze"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-brand-charcoal">
+            Katalog Unggulan BWBYAZ
+          </h2>
+          <p class="text-brand-muted text-sm sm:text-base font-light max-w-xl mx-auto">
+            Empat koleksi masterpiece yang dirancang untuk momen istimewa hingga aktivitas harian bergaya chic modern.
+          </p>
+        </div>
+
+        <!-- Product Grid: 4 Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Product Card 1 -->
+          <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
+              <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=85" 
+                   alt="Aurelia Silk Wrap Dress BWBYAZ" 
+                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                   referrerpolicy="no-referrer" />
+              
+              <!-- Tag badge -->
+              <div class="absolute top-3 left-3 bg-brand-charcoal/90 text-white text-[10px] tracking-widest uppercase font-semibold px-2.5 py-1">
+                Signature Dress
+              </div>
+
+              <!-- Quick View Trigger -->
+              <button onclick="openProductModal('Aurelia Silk Wrap Dress', 'Rp 689.000', 'Signature Dress', 'Material Mulberry Silk Blend premium dengan efek kilau elegan bersahaja. Dilengkapi pita pinggang fleksibel dan aksen drapery anggun yang membuat siluet terlihat ramping.', 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=85', 'Warm Champagne')" 
+                      class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
+                <i class="fa-regular fa-eye"></i>
+                <span>Quick View</span>
+              </button>
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-4">
+              <div>
+                <p class="text-[11px] tracking-widest uppercase text-brand-bronze font-semibold">Dress & Gown</p>
+                <h3 class="font-serif text-xl font-medium text-brand-charcoal mt-1 group-hover:text-brand-bronze transition-colors">
+                  Aurelia Silk Wrap Dress
+                </h3>
+                <p class="text-xs text-brand-muted mt-1.5 line-clamp-2">
+                  Mulberry silk blend, tekstur jatuh lembut, wudhu friendly dengan kancing manset tersembunyi.
+                </p>
+                <div class="flex items-center gap-1.5 text-[10px] text-brand-muted mt-2 font-mono">
+                  <span>Size: S</span> · <span>M</span> · <span>L</span> · <span>XL</span>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-brand-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
+                  <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 689.000</span>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Aurelia%20Silk%20Wrap%20Dress%20(Rp%20689.000).%20Apakah%20size%20masih%20tersedia?" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
+                  <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                  <span>Order WA</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" 
+                   alt="Celeste Pleated Peplum Blouse BWBYAZ" 
+                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                   referrerpolicy="no-referrer" />
+              
+              <div class="absolute top-3 left-3 bg-brand-charcoal/90 text-white text-[10px] tracking-widest uppercase font-semibold px-2.5 py-1">
+                Daily Chic
+              </div>
+
+              <button onclick="openProductModal('Celeste Pleated Peplum Blouse', 'Rp 349.000', 'Daily Chic Blouse', 'Blouse elegan berdetail pleated lipit mikro rapi di bagian dada dengan siluet peplum modern. Menggunakan katun poplin premium yang adem untuk kantor maupun santai.', 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85', 'Alabaster Ivory')" 
+                      class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
+                <i class="fa-regular fa-eye"></i>
+                <span>Quick View</span>
+              </button>
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-4">
+              <div>
+                <p class="text-[11px] tracking-widest uppercase text-brand-bronze font-semibold">Tops & Blouse</p>
+                <h3 class="font-serif text-xl font-medium text-brand-charcoal mt-1 group-hover:text-brand-bronze transition-colors">
+                  Celeste Pleated Blouse
+                </h3>
+                <p class="text-xs text-brand-muted mt-1.5 line-clamp-2">
+                  Katun poplin Jepang berserat halus, detail pleats presisi, kerah mandarin minimalis yang rapi.
+                </p>
+                <div class="flex items-center gap-1.5 text-[10px] text-brand-muted mt-2 font-mono">
+                  <span>Size: S</span> · <span>M</span> · <span>L</span> · <span>XL</span>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-brand-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
+                  <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 349.000</span>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Celeste%20Pleated%20Blouse%20(Rp%20349.000).%20Apakah%20size%20masih%20tersedia?" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
+                  <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                  <span>Order WA</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
+              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85" 
+                   alt="Valerie Textured Trench Outer BWBYAZ" 
+                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                   referrerpolicy="no-referrer" />
+              
+              <div class="absolute top-3 left-3 bg-brand-charcoal/90 text-white text-[10px] tracking-widest uppercase font-semibold px-2.5 py-1">
+                Outerwear
+              </div>
+
+              <button onclick="openProductModal('Valerie Textured Trench Outer', 'Rp 499.000', 'Elegant Outerwear', 'Outer berpotongan longgar dengan aksen belt gesper bronze. Dibuat dari linen blend bertekstur tenun mewah yang memberikan aura profesional sekaligus santai.', 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85', 'Sand Beige')" 
+                      class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
+                <i class="fa-regular fa-eye"></i>
+                <span>Quick View</span>
+              </button>
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-4">
+              <div>
+                <p class="text-[11px] tracking-widest uppercase text-brand-bronze font-semibold">Outerwear</p>
+                <h3 class="font-serif text-xl font-medium text-brand-charcoal mt-1 group-hover:text-brand-bronze transition-colors">
+                  Valerie Trench Outer
+                </h3>
+                <p class="text-xs text-brand-muted mt-1.5 line-clamp-2">
+                  Linen weave bertekstur kaya, aksen belt lepas-pasang, kerah notch lapel elegan berkelas.
+                </p>
+                <div class="flex items-center gap-1.5 text-[10px] text-brand-muted mt-2 font-mono">
+                  <span>Size: All Size (Fit to XL)</span>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-brand-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
+                  <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 499.000</span>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Valerie%20Trench%20Outer%20(Rp%20499.000).%20Apakah%20masih%20tersedia?" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
+                  <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                  <span>Order WA</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="group bg-brand-ivory border border-brand-border flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="relative aspect-[3/4] overflow-hidden bg-brand-beige">
+              <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=85" 
+                   alt="Seraphina Two-Piece Satin Linen Set BWBYAZ" 
+                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                   referrerpolicy="no-referrer" />
+              
+              <div class="absolute top-3 left-3 bg-brand-charcoal/90 text-white text-[10px] tracking-widest uppercase font-semibold px-2.5 py-1">
+                Exclusive Sets
+              </div>
+
+              <button onclick="openProductModal('Seraphina Two-Piece Set', 'Rp 789.000', 'Exclusive Sets', 'Setelan two-piece eksklusif terdiri dari atasan tunik asimetris dan celana palazzo berpotongan jenjang. Dibuat dari perpaduan satin armani dan linen premium anti kusut.', 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=85', 'Warm Mocha')" 
+                      class="absolute inset-x-3 bottom-3 py-2.5 bg-brand-ivory/95 hover:bg-brand-charcoal hover:text-white text-brand-charcoal text-xs font-semibold tracking-wider uppercase transition-all duration-200 opacity-90 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 shadow">
+                <i class="fa-regular fa-eye"></i>
+                <span>Quick View</span>
+              </button>
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow justify-between space-y-4">
+              <div>
+                <p class="text-[11px] tracking-widest uppercase text-brand-bronze font-semibold">Coord Set</p>
+                <h3 class="font-serif text-xl font-medium text-brand-charcoal mt-1 group-hover:text-brand-bronze transition-colors">
+                  Seraphina Two-Piece Set
+                </h3>
+                <p class="text-xs text-brand-muted mt-1.5 line-clamp-2">
+                  Atasan tunik asimetris & celana palazzo flowy, jatuh anggun tidak membentuk lekuk berlebih.
+                </p>
+                <div class="flex items-center gap-1.5 text-[10px] text-brand-muted mt-2 font-mono">
+                  <span>Size: S</span> · <span>M</span> · <span>L</span> · <span>XL</span>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-brand-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] text-brand-muted block uppercase tracking-wider">Harga</span>
+                  <span class="font-serif text-lg font-bold text-brand-charcoal tabular-nums">Rp 789.000</span>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20tertarik%20untuk%20memesan%20Seraphina%20Two-Piece%20Set%20(Rp%20789.000).%20Apakah%20size%20masih%20tersedia?" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-medium tracking-wide uppercase transition-colors">
+                  <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                  <span>Order WA</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Catalog Note -->
+        <div class="mt-12 text-center">
+          <p class="text-xs text-brand-muted mb-4">Ingin melihat varian warna lain atau custom lingkar dada?</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20ukuran%20dan%20katalog%20lengkap%20beserta%20pilihan%20warnanya."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-brand-bronze hover:text-brand-charcoal underline underline-offset-8 transition-colors">
+            <span>Tanya Admin untuk Katalog Lengkap & Ukuran Khusus</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE BWBYAZ ================= -->
+    <section id="keunggulan" class="py-20 lg:py-28 bg-brand-ivory border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-brand-bronze">
+            <span class="w-6 h-[1px] bg-brand-bronze"></span>
+            <span>Nilai Unggul Kami</span>
+            <span class="w-6 h-[1px] bg-brand-bronze"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-brand-charcoal">
+            Mengapa Memilih BWBYAZ?
+          </h2>
+          <p class="text-brand-muted text-sm sm:text-base font-light max-w-xl mx-auto">
+            Dedikasi penuh pada empat pilar kualitas yang menjadikan setiap helai busana investasi penampilan terbaik Anda.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="p-8 bg-brand-cream/80 border border-brand-border/80 hover:border-brand-bronze/50 transition-colors duration-300">
+            <div class="w-12 h-12 bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-bronze text-xl mb-6 shadow-sm">
+              <i class="fa-solid fa-feather"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-brand-charcoal mb-2">Bahan Premium Grade A</h3>
+            <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+              Pemilihan serat sutra, katun combed lembut, dan linen kualitas tertinggi. Menyerap keringat, adem di kulit, tidak menerawang, serta jatuh anggun alami.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-8 bg-brand-cream/80 border border-brand-border/80 hover:border-brand-bronze/50 transition-colors duration-300">
+            <div class="w-12 h-12 bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-bronze text-xl mb-6 shadow-sm">
+              <i class="fa-solid fa-vest-patches"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-brand-charcoal mb-2">Jahitan Standar Butik</h3>
+            <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+              Dikerjakan oleh penjahit profesional berpengalaman dengan kerapatan stik tinggi (clean finished seam), tanpa benang bertumpuk, tahan lama dan rapi luar-dalam.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-8 bg-brand-cream/80 border border-brand-border/80 hover:border-brand-bronze/50 transition-colors duration-300">
+            <div class="w-12 h-12 bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-bronze text-xl mb-6 shadow-sm">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-brand-charcoal mb-2">Desain Eksklusif & Elegan</h3>
+            <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+              Pola rancangan orisinal bernuansa timeless. Potongan dirancang proporsional agar pemakai terlihat jenjang, santun, dan percaya diri di setiap acara.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="p-8 bg-brand-cream/80 border border-brand-border/80 hover:border-brand-bronze/50 transition-colors duration-300">
+            <div class="w-12 h-12 bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-bronze text-xl mb-6 shadow-sm">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-brand-charcoal mb-2">Pelayanan Fast Response</h3>
+            <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+              Tim fashion stylist kami siap membantu konsultasi ukuran (lingkar dada, panjang badan), rekomendasi padu-padan, serta pengiriman cepat bergaransi.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS / SOCIAL PROOF ================= -->
+    <section id="testimoni" class="py-20 lg:py-28 bg-brand-cream border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-brand-bronze">
+            <span class="w-6 h-[1px] bg-brand-bronze"></span>
+            <span>Testimoni Pelanggan</span>
+            <span class="w-6 h-[1px] bg-brand-bronze"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-brand-charcoal">
+            Ulasan dari Mereka yang Menghargai Kualitas
+          </h2>
+          <p class="text-brand-muted text-sm sm:text-base font-light max-w-xl mx-auto">
+            Kepercayaan ribuan pelanggan di berbagai kota adalah cerminan dedikasi butik kami.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1 -->
+          <div class="bg-brand-ivory border border-brand-border p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="space-y-4">
+              <div class="flex items-center gap-1 text-amber-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-brand-charcoal text-sm leading-relaxed italic font-light">
+                “Aurelia Silk Wrap Dress-nya benar-benar di luar ekspektasi! Bahannya jatuh sangat anggun, dingin dipakai resepsi outdoor berjam-jam, dan jahitannya luar biasa rapi standar butik high-end. Sangat memuaskan.”
+              </p>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex items-center justify-between">
+              <div>
+                <h4 class="font-serif font-bold text-brand-charcoal text-base">Amanda Ramadhani</h4>
+                <p class="text-[11px] text-brand-muted">Jakarta Selatan · Pembeli Terverifikasi</p>
+              </div>
+              <span class="text-xs text-brand-bronze font-mono">Aurelia Silk</span>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-brand-ivory border border-brand-border p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="space-y-4">
+              <div class="flex items-center gap-1 text-amber-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-brand-charcoal text-sm leading-relaxed italic font-light">
+                “Celeste Blouse jadi andalan saya buat meeting formal dan dinner santai. Cutting peplum-nya sangat flattering di badan, menyamarkan perut tapi tetap kelihatan proporsional. Admin WA-nya juga super ramah dan gercep menjawab size guide.”
+              </p>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex items-center justify-between">
+              <div>
+                <h4 class="font-serif font-bold text-brand-charcoal text-base">dr. Clarissa Paramitha</h4>
+                <p class="text-[11px] text-brand-muted">Surabaya Barat · Pembeli Terverifikasi</p>
+              </div>
+              <span class="text-xs text-brand-bronze font-mono">Celeste Blouse</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-brand-ivory border border-brand-border p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="space-y-4">
+              <div class="flex items-center gap-1 text-amber-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-brand-charcoal text-sm leading-relaxed italic font-light">
+                “Beli Seraphina Set warna Warm Mocha. Packaging kotaknya mewah dengan aroma wangi lembut saat dibuka. Terasa sekali eksklusifnya, bukan produk konveksi biasa. Worth every single rupiah!”
+              </p>
+            </div>
+            <div class="pt-6 border-t border-brand-border/60 mt-6 flex items-center justify-between">
+              <div>
+                <h4 class="font-serif font-bold text-brand-charcoal text-base">Zahra Nadhira, S.Psi</h4>
+                <p class="text-[11px] text-brand-muted">Bandung · Pembeli Terverifikasi</p>
+              </div>
+              <span class="text-xs text-brand-bronze font-mono">Seraphina Set</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="py-16 bg-brand-charcoal text-white relative overflow-hidden">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-brand-gold">Konsultasi Ukuran & Pemesanan</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-white leading-snug">
+          Temukan Potongan Sempurna untuk Momen Berharga Anda.
+        </h2>
+        <p class="text-brand-goldLight/80 text-sm sm:text-base max-w-2xl mx-auto font-light">
+          Hubungi admin butik kami melalui WhatsApp untuk panduan ukuran detail, info ketersediaan stok warna, dan pemesanan instan tanpa repot.
+        </p>
+        <div class="pt-4">
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20ukuran%20dan%20memesan%20busana%20BWBYAZ."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-3 px-8 py-4 bg-brand-bronze hover:bg-brand-gold text-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-lg">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Chat WhatsApp Sekarang</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="kontak" class="bg-brand-ivory border-t border-brand-border text-brand-charcoal pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-12 border-b border-brand-border/60">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-4 space-y-4">
+          <span class="font-serif text-2xl font-bold tracking-[0.28em] text-brand-charcoal block">
+            BWBYAZ
+          </span>
+          <p class="text-xs text-brand-muted leading-relaxed max-w-sm">
+            Atelier busana wanita yang mendedikasikan karya pada keselarasan material premium, potongan eksklusif, dan keanggunan modern yang abadi.
+          </p>
+          <div class="pt-2 flex items-center gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram BWBYAZ" class="w-9 h-9 flex items-center justify-center border border-brand-border text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok BWBYAZ" class="w-9 h-9 flex items-center justify-center border border-brand-border text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors">
+              <i class="fa-brands fa-tiktok text-sm"></i>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp BWBYAZ" class="w-9 h-9 flex items-center justify-center border border-brand-border text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <p class="text-xs font-semibold tracking-widest uppercase text-brand-charcoal">Navigasi</p>
+          <ul class="space-y-2 text-xs text-brand-muted">
+            <li><a href="#" class="hover:text-brand-bronze transition-colors">Beranda</a></li>
+            <li><a href="#about" class="hover:text-brand-bronze transition-colors">Tentang BWBYAZ</a></li>
+            <li><a href="#koleksi" class="hover:text-brand-bronze transition-colors">Koleksi Signature</a></li>
+            <li><a href="#keunggulan" class="hover:text-brand-bronze transition-colors">Keunggulan Butik</a></li>
+            <li><a href="#testimoni" class="hover:text-brand-bronze transition-colors">Ulasan Pelanggan</a></li>
+          </ul>
+        </div>
+
+        <!-- Jam Operasional -->
+        <div class="lg:col-span-3 space-y-3">
+          <p class="text-xs font-semibold tracking-widest uppercase text-brand-charcoal">Jam Layanan</p>
+          <div class="text-xs text-brand-muted space-y-1.5 leading-relaxed">
+            <p><strong class="font-medium text-brand-charcoal">Senin – Jumat:</strong> 09.00 – 18.00 WIB</p>
+            <p><strong class="font-medium text-brand-charcoal">Sabtu:</strong> 09.00 – 16.00 WIB</p>
+            <p><strong class="font-medium text-brand-charcoal">Minggu & Hari Libur:</strong> Konsultasi Online via WA</p>
+            <p class="text-[11px] text-brand-bronze pt-1">Respon pesan WhatsApp: &lt; 15 menit</p>
+          </div>
+        </div>
+
+        <!-- Alamat & Kontak -->
+        <div class="lg:col-span-3 space-y-3">
+          <p class="text-xs font-semibold tracking-widest uppercase text-brand-charcoal">Butik & Kontak Resmi</p>
+          <div class="text-xs text-brand-muted space-y-2 leading-relaxed">
+            <p class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-brand-bronze mt-0.5"></i>
+              <span>Kemang Raya No. 42B, Bangka, Mampang Prapatan, Jakarta Selatan 12730</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-brand-bronze"></i>
+              <a href="https://wa.me/6281234567890" class="hover:text-brand-bronze transition-colors font-mono">+62 812-3456-7890</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-brand-bronze"></i>
+              <a href="mailto:order@bwbyaz.com" class="hover:text-brand-bronze transition-colors">concierge@bwbyaz.com</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-muted gap-4">
+        <p>&copy; 2026 BWBYAZ Signature Atelier. Seluruh Hak Cipta Dilindungi.</p>
+        <p class="text-brand-muted/70 text-[11px]">Designed with Timeless Precision & Elegance.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Tooltip label -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20BWBYAZ,%20saya%20ingin%20konsultasi%20mengenai%20koleksi%20busana." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat WhatsApp Admin BWBYAZ" 
+       class="flex items-center gap-2.5 px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl transition-all duration-300 transform group-hover:scale-105">
+      <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+      <span class="text-xs font-semibold tracking-wide pr-1 hidden sm:inline">Order via WA</span>
+    </a>
+  </div>
+
+  <!-- ================= QUICK VIEW / ORDER MODAL ================= -->
+  <div id="productModal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
+    <!-- Backdrop overlay -->
+    <div class="fixed inset-0 bg-brand-charcoal/60 backdrop-blur-sm transition-opacity" onclick="closeProductModal()"></div>
+
+    <!-- Modal Dialog Box -->
+    <div class="flex min-h-screen items-center justify-center p-4 text-center sm:p-0">
+      <div class="relative transform overflow-hidden bg-brand-ivory border border-brand-border text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+        
+        <!-- Close Button -->
+        <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center bg-brand-ivory text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-colors border border-brand-border">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <!-- Image -->
+          <div class="aspect-[3/4] sm:aspect-auto bg-brand-beige overflow-hidden">
+            <img id="modalImg" src="" alt="Detail Busana BWBYAZ" class="w-full h-full object-cover" />
+          </div>
+
+          <!-- Content Details -->
+          <div class="p-6 sm:p-8 flex flex-col justify-between space-y-6">
+            <div>
+              <span id="modalCategory" class="text-[10px] tracking-widest uppercase text-brand-bronze font-bold">Category</span>
+              <h3 id="modalTitle" class="font-serif text-2xl font-medium text-brand-charcoal mt-1">Product Title</h3>
+              <p id="modalPrice" class="font-serif text-xl font-bold text-brand-charcoal mt-2 tabular-nums">Rp 0</p>
+              
+              <div class="mt-4 pt-4 border-t border-brand-border/60">
+                <p id="modalDesc" class="text-xs text-brand-muted leading-relaxed">
+                  Deskripsi produk lengkap.
+                </p>
+              </div>
+
+              <!-- Color preview -->
+              <div class="mt-4">
+                <span class="text-[10px] uppercase tracking-wider text-brand-charcoal font-semibold block mb-1.5">Varian Warna:</span>
+                <span id="modalColor" class="inline-block text-xs font-medium text-brand-bronze">Warm Ivory</span>
+              </div>
+
+              <!-- Size selector -->
+              <div class="mt-4">
+                <span class="text-[10px] uppercase tracking-wider text-brand-charcoal font-semibold block mb-2">Pilih Ukuran:</span>
+                <div class="flex items-center gap-2" id="modalSizeOptions">
+                  <button type="button" onclick="selectSize('S')" class="size-btn px-3 py-1.5 text-xs font-semibold border border-brand-charcoal bg-brand-charcoal text-white transition-colors" data-size="S">S</button>
+                  <button type="button" onclick="selectSize('M')" class="size-btn px-3 py-1.5 text-xs font-semibold border border-brand-border hover:border-brand-charcoal text-brand-charcoal transition-colors" data-size="M">M</button>
+                  <button type="button" onclick="selectSize('L')" class="size-btn px-3 py-1.5 text-xs font-semibold border border-brand-border hover:border-brand-charcoal text-brand-charcoal transition-colors" data-size="L">L</button>
+                  <button type="button" onclick="selectSize('XL')" class="size-btn px-3 py-1.5 text-xs font-semibold border border-brand-border hover:border-brand-charcoal text-brand-charcoal transition-colors" data-size="XL">XL</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Action Buttons -->
+            <div class="space-y-2 pt-2">
+              <a id="modalOrderBtn" 
+                 href="#" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 bg-brand-charcoal hover:bg-brand-bronze text-white text-xs font-semibold tracking-wider uppercase transition-colors shadow">
+                <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                <span>Pesan Sekarang via WA</span>
+              </a>
+              <p class="text-[10px] text-center text-brand-muted">Konsultasi ukuran & format pesanan otomatis terisi di chat WA.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INTERACTIVE SCRIPT ================= -->
+  <script>
+    // Mobile navigation drawer toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        });
+      });
+    }
+
+    // Modal state & logic
+    let currentSelectedProduct = {
+      name: '',
+      price: '',
+      selectedSize: 'S'
+    };
+
+    function selectSize(size) {
+      currentSelectedProduct.selectedSize = size;
+      const sizeButtons = document.querySelectorAll('.size-btn');
+      sizeButtons.forEach(btn => {
+        if (btn.getAttribute('data-size') === size) {
+          btn.className = 'size-btn px-3 py-1.5 text-xs font-semibold border border-brand-charcoal bg-brand-charcoal text-white transition-colors';
+        } else {
+          btn.className = 'size-btn px-3 py-1.5 text-xs font-semibold border border-brand-border hover:border-brand-charcoal text-brand-charcoal transition-colors';
+        }
+      });
+      updateModalOrderLink();
+    }
+
+    function updateModalOrderLink() {
+      const modalOrderBtn = document.getElementById('modalOrderBtn');
+      const textMessage = encodeURIComponent(
+        `Halo Admin BWBYAZ, saya ingin memesan:\n• Produk: ${currentSelectedProduct.name}\n• Ukuran: ${currentSelectedProduct.selectedSize}\n• Harga: ${currentSelectedProduct.price}\n\nApakah masih tersedia dan bagaimana prosedur pembayarannya? Terima kasih!`
+      );
+      modalOrderBtn.href = `https://wa.me/6281234567890?text=${textMessage}`;
+    }
+
+    function openProductModal(name, price, category, desc, imgUrl, color) {
+      currentSelectedProduct = {
+        name: name,
+        price: price,
+        selectedSize: 'S'
+      };
+
+      document.getElementById('modalTitle').textContent = name;
+      document.getElementById('modalPrice').textContent = price;
+      document.getElementById('modalCategory').textContent = category;
+      document.getElementById('modalDesc').textContent = desc;
+      document.getElementById('modalImg').src = imgUrl;
+      document.getElementById('modalColor').textContent = color;
+
+      selectSize('S');
+      updateModalOrderLink();
+
+      document.getElementById('productModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal() {
+      document.getElementById('productModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProductModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
