@@ -237,20 +237,13 @@
               <!-- Background accent geometry -->
               <div class="absolute -inset-3 bg-brand-beige rounded-none border border-brand-sand/60 -z-10 transform rotate-1"></div>
               
-              <div class="relative aspect-[3/4] w-full overflow-hidden bg-brand-cream border border-brand-border shadow-xl group">
-                <!-- Quick Image Upload button for user's photo -->
-                <label for="heroImageUploader" title="Ganti atau upload foto hero sendiri" class="absolute top-3 right-3 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-brand-charcoal/80 hover:bg-brand-charcoal text-white text-[10px] font-semibold tracking-wider uppercase backdrop-blur-md border border-white/20 shadow-md cursor-pointer transition-all duration-200">
-                  <i class="fa-solid fa-camera text-brand-goldLight text-xs"></i>
-                  <span>Ganti Foto</span>
-                </label>
-                <input type="file" id="heroImageUploader" accept="image/*" class="hidden" onchange="handleHeroImageUpload(event)" />
-
+              <div class="relative aspect-[3/4] w-full overflow-hidden bg-brand-cream border border-brand-border shadow-xl">
                 <img id="heroMainImage"
-                     src="hero-banner.jpg" 
+                     src="/hero-banner.jpg" 
                      alt="Koleksi busana signature BWBYAZ di gantungan butik: cardigan floral, red puff top, dan koleksi netral" 
                      class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                      referrerpolicy="no-referrer"
-                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1000&q=85';" />
+                     onerror="this.onerror=null; this.src='/src/assets/images/regenerated_image_1792038484082.jpg';" />
                 
                 <!-- Bottom Scrim Overlay -->
                 <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/75 via-black/30 to-transparent text-white pointer-events-none">
@@ -1018,48 +1011,36 @@
       document.body.style.overflow = '';
     }
 
-    // Close modal on ESC key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeProductModal();
-      }
-    });
-
-    // Custom Hero Image Uploader & Local Persistence
-    function handleHeroImageUpload(event) {
-      const file = event.target.files && event.target.files[0];
-      if (!file) return;
-
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const dataUrl = e.target.result;
-        const heroImg = document.getElementById('heroMainImage');
-        if (heroImg) {
-          heroImg.src = dataUrl;
+    // Silent drag-and-drop support on Hero Image (no buttons or labels)
+    const heroImageContainer = document.getElementById('heroMainImage');
+    if (heroImageContainer && heroImageContainer.parentElement) {
+      const containerBox = heroImageContainer.parentElement;
+      containerBox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+      });
+      containerBox.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const file = e.dataTransfer && e.dataTransfer.files[0];
+        if (file && file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            heroImageContainer.src = event.target.result;
+            try {
+              localStorage.setItem('bwbyaz_hero_image', event.target.result);
+            } catch (err) {}
+          };
+          reader.readAsDataURL(file);
         }
-        try {
-          localStorage.setItem('bwbyaz_hero_image', dataUrl);
-        } catch (err) {
-          console.warn('Ukuran gambar melebihi batas simpan lokal:', err);
-        }
-      };
-      reader.readAsDataURL(file);
-    }
+      });
 
-    // Auto-restore custom hero image if previously saved in browser
-    window.addEventListener('DOMContentLoaded', () => {
+      // Restore if user previously dropped/saved their image
       try {
-        const savedHero = localStorage.getItem('bwbyaz_hero_image');
-        if (savedHero) {
-          const heroImg = document.getElementById('heroMainImage');
-          if (heroImg) {
-            heroImg.src = savedHero;
-          }
+        const saved = localStorage.getItem('bwbyaz_hero_image');
+        if (saved) {
+          heroImageContainer.src = saved;
         }
-      } catch (err) {
-        console.warn('Gagal memuat foto hero tersimpan:', err);
-      }
-    });
+      } catch (err) {}
+    }
   </script>
 
 </body>
